@@ -41,6 +41,7 @@ html {
     }
 }
 
+
 .container {
     min-height: 100vh;
     background-color: #28120A;
@@ -1052,7 +1053,7 @@ menu {
 
 /* media query  */
 
-@media  only screen and (min-width: 1100px) and (max-width: 1250px) {
+@media only screen and (min-width: 1100px) and (max-width: 1250px) {
     .page3-txts h1 {
         font-size: 50px;
     }
@@ -1114,9 +1115,11 @@ menu {
         line-height: 40px;
         margin-right: 20px;
     }
-     .page7 .open {
-    width: 22%;
-}
+
+    .page7 .open {
+        width: 22%;
+    }
+
     .page7 table tr td {
         font-size: 40px;
     }
@@ -1124,10 +1127,12 @@ menu {
     .page7 .open h1 {
         font-size: 35px;
     }
+
     /* page4 */
     .page4 .three-content {
         width: 85%;
     }
+
     .three-content .box3 {
         display: none;
 
@@ -1136,7 +1141,7 @@ menu {
     .three-content .box {
         width: 49%;
     }
-   
+
     .page4 {
         background:
             url("./assets/page4/AnimatedCircle.png") left top / 250px no-repeat,
@@ -1824,9 +1829,11 @@ menu {
         line-height: 45px;
         margin-right: 15px;
     }
+
     .page7 table tr td {
         font-size: 23px;
     }
+
     .page8>h1::before,
     .page8>h1::after {
         content: "";
@@ -1884,7 +1891,7 @@ menu {
     .line .line2 {
         height: 120px;
     }
- 
+
     /* page-8 */
     .page8 {
         padding: 15px;
@@ -1986,17 +1993,19 @@ menu {
         width: 180px;
     }
 
-       .page7 .open h1 {
+    .page7 .open h1 {
         font-size: 14px;
         line-height: 33px;
         margin-right: 15px;
     }
-         .page7 table tr td {
+
+    .page7 table tr td {
         font-size: 23px;
     }
-   .page7 h1 {
-    height: fit-content;
-   }
+
+    .page7 h1 {
+        height: fit-content;
+    }
 
     .page8>h1::before,
     .page8>h1::after {
@@ -2012,26 +2021,42 @@ menu {
         padding: 20px;
         font-size: 18px;
     }
-}
 
+    .socials .lord {
+        height: 30px !important;
+        width: 30px !important;
+    }
+
+}
+    .socials h3 {
+        font-family: 'Courier New', Courier, monospace;
+        /* color: gold; */
+        font-weight: 600;
+        background: linear-gradient(90deg, #ff6b6b, #ffd93d);
+        background-clip: text;
+        color: transparent;
+    }
 
 /* scroll animation  */
 
 .page1-texts h6 {
-  animation: fadeUp 0.7s ease both;
-  animation-delay: 0.1s;
+    animation: fadeUp 0.7s ease both;
+    animation-delay: 0.1s;
 }
+
 .page1-texts h1 {
-  animation: fadeUp 0.8s ease both;
-  animation-delay: 0.2s;
+    animation: fadeUp 0.8s ease both;
+    animation-delay: 0.2s;
 }
+
 .txt-seed h1 {
-  animation: fadeUp 0.8s ease both;
-  animation-delay: 0.3s;
+    animation: fadeUp 0.8s ease both;
+    animation-delay: 0.3s;
 }
+
 .page1-texts p {
-  animation: fadeUp 0.7s ease both;
-  animation-delay: 0.4s;
+    animation: fadeUp 0.7s ease both;
+    animation-delay: 0.4s;
 }
 
 
@@ -2039,7 +2064,152 @@ menu {
 
 /* keyframes  */
 @keyframes fadeUp {
-  from { opacity: 0; transform: translateY(60px); }
-  to   { opacity: 1; transform: translateY(0);    }
+    from {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
+.page2 {
+    animation-name: test;
+    animation-delay: 1.3s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes test {
+    from {
+        opacity: 0.3;
+        scale: .3;
+        transform: translateX(100%);
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+        transform: translateX(0px);
+    }
+}
+
+.page3 {
+    animation-name: test2;
+    animation-delay: 2s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes test2 {
+    from {
+        opacity: 0.3;
+        scale: .3;
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+    }
+}
+
+.page3 {
+    animation-name: test3;
+    animation-delay: 2.3s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes test3 {
+    from {
+        opacity: 0.3;
+        scale: .3;
+        transform: translateY(100%);
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+        transform: translateY(0px);
+    }
+}
+
+.page4 h1 {
+    animation-name: test4;
+    animation-delay: 4.4s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes test4 {
+    from {
+        opacity: 0.3;
+        scale: 1.3;
+        transform: translateX(40%);
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+        transform: translateX(0px);
+    }
+}
+
+.page5 h1,
+.page5 p {
+    animation-name: test5;
+    animation-delay: 6s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes test5 {
+    10% {
+        opacity: 0.3;
+
+    }
+
+    50% {
+        opacity: 0.6;
+        color: #392a0e;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.page6 .four-juice {
+    animation-name: test6;
+    animation-delay: 9.4s;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes test6 {
+    from {
+        opacity: 0.3;
+        scale: .3;
+        transform: translateX(-80%);
+    }
+
+    to {
+        opacity: 1;
+        scale: 1;
+        transform: translateX(0px);
+    }
+}
