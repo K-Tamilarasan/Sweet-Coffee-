@@ -83,6 +83,7 @@ nav {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     transition: letter-spacing 0.3s ease;
 }
+
 .logo-text:hover h1 {
     letter-spacing: 2px;
 }
@@ -109,7 +110,7 @@ menu ul li {
 menu ul li a {
     text-decoration: none;
     color: white;
-     position: relative;
+    position: relative;
     padding-bottom: 3px;
 }
 
@@ -1051,278 +1052,18 @@ menu {
 
 /* media query  */
 
-@media only screen and (max-width: 800px) {
-
-    /* menu query */
-    menu ul {
-        height: 60vh;
-        background-color: #392a0e;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    menu {
-        width: 98%;
-        position: absolute;
-        top: 84px;
-        left: -98%;
-    }
-
-    menu ul li {
-        font-size: 50px;
-    }
-
-    nav i {
-        visibility: visible;
-    }
-
-    /* page1 query */
-    .page1 {
-        flex-direction: column;
-    }
-
-    .page1 .page1-img {
-        width: 95%;
-        justify-content: center;
-
-        /* background-color: #966a19; */
-    }
-
-    .page1-img img {
-        width: 100%;
-    }
-
-    .page1 .page1-texts {
-        width: 96%;
-        padding-top: 60px;
-    }
-
-    .page1-texts h6 {
-        font-size: 25px;
-        margin: 8px 0px;
-    }
-
-    /* page2 query */
-    .page2 .txts-imgs>p {
-        width: 90%;
-    }
-
-    /* page3 query */
-    .page3-txts {
-        width: 90%;
-    }
-
+@media  only screen and (min-width: 1100px) and (max-width: 1250px) {
     .page3-txts h1 {
-        font-size: 40px;
-        line-height: 50px;
-    }
-
-    .page3-txts p {
-        width: 100%;
-    }
-
-    /* page4 query */
-    .page4 {
-        height: auto;
-    }
-
-    .page4 h1 {
         font-size: 50px;
-        margin: 35px auto;
-    }
-
-    .page4 .three-content {
-        height: auto;
-        width: 100%;
-        /* background-color: aqua; */
-    }
-
-    .page4 .three-content .box {
-        /* background-color: #966a19; */
-        height: 380px;
-        padding-left: 10px;
-    }
-
-    .three-content .box .lafe,
-    .lafe img {
-        height: 50%;
-        width: 80%;
-    }
-
-    .lafe img {
-        height: 90%;
-        width: 90%;
-    }
-
-    .three-content .box1 p {
-        width: 100%;
-    }
-
-    .three-content .box button {
-        height: 60px;
-        width: 60px;
-        font-size: 20px;
-    }
-
-    /* page5 query  */
-    .page5 h1 {
-        font-size: 46px;
-        margin-top: 15px auto;
-    }
-
-    .page5 p {
-        width: 95%;
-    }
-
-    .three-imgs img {
-        width: 55%;
-    }
-
-    /* page6 query */
-    .page6 .circle1,
-    .page6 .circle2,
-    .page6 .circle3 {
-        height: 330px;
-        width: 330px;
-    }
-
-    .page6-content h1 {
-        font-size: 50px;
-        width: 90%;
-    }
-
-    .four-juice .juice2,
-    .four-juice .juice3 {
-        display: none;
-    }
-
-    /* page7 query */
-    .page7 .open h1 {
-        font-size: 40px;
-        line-height: 55px;
-        margin-right: 20px;
-    }
-
-    .page7 table tr {
-        font-size: 33px;
-    }
-
-    /* page8 query */
-    .page8 {
-        min-height: 500px;
-    }
-
-    .page8>h1 {
-        padding: 35px;
-        font-size: 30px;
-    }
-
-    .page8>h1::before,
-    .page8>h1::after {
-        content: "";
-        display: inline-block;
-        height: 2px;
-        width: 10%;
-        background-color: aliceblue;
-        margin: 15px;
-    }
-
-    .page8-boxs {
-        gap: 40px;
-    }
-
-    .page8-box {
-        width: 40%;
-        padding: 5px;
-        left: 0%;
-    }
-
-    .page8-box img:first-child {
-        height: 80px;
-        width: 80px;
-    }
-
-    .page8-box img:nth-child(2) {
-        height: 50px;
-        width: 100px;
-    }
-
-    /* page10 footer */
-    footer .logo-text {
-        width: max-content;
-    }
-
-    .footer-threeboxs {
-        gap: 20px;
-    }
-
-    .footer-threeboxs .one {
-        width: 40%;
-    }
-
-    .footer-threeboxs .three {
-        width: 35%;
-    }
-
-    .footer-threeboxs .two {
-        width: 15%;
-    }
-
-    .footer-threeboxs>img {
-        max-height: 50%;
-        max-width: 50%;
-        position: absolute;
-        top: 60%;
-        right: 10%;
-        transform: translate(30%, 40%);
     }
 }
 
-@media only screen and (max-width: 600px) {
-    .four-juice .juice4 {
-        display: none;
-    }
-
-    .footer-threeboxs h2 {
-        font-size: 12px;
-    }
-
-    .page1 {
-        text-align: center;
-    }
-
-    .txt-seed {
-        display: block;
-    }
-
-    .page1-texts h1 {
-        line-height: 63px;
-    }
-
-    .txt-seed img {
-        position: absolute;
-        height: 90px;
-        width: 90px;
-        right: 8%;
-        transform: translateY(-90px);
-        /* display: none; */
-    }
-}
 
 @media only screen and (max-width: 1100px) {
     .logo-text h1 {
         font-size: 1.3rem;
     }
 
-    /* .page1 {
-        text-align: center;
-    } 
-      .txt-seed {
-        justify-content: center;
-        align-items: center;
-     }  */
-    /* .four-juice .juice2, */
     .four-juice .juice3 {
         display: none;
     }
@@ -1369,12 +1110,24 @@ menu {
 
     /* page7 query */
     .page7 .open h1 {
-        font-size: 35px;
-        line-height: 35px;
+        font-size: 45px;
+        line-height: 40px;
         margin-right: 20px;
     }
+     .page7 .open {
+    width: 22%;
+}
+    .page7 table tr td {
+        font-size: 40px;
+    }
 
+    .page7 .open h1 {
+        font-size: 35px;
+    }
     /* page4 */
+    .page4 .three-content {
+        width: 85%;
+    }
     .three-content .box3 {
         display: none;
 
@@ -1383,7 +1136,7 @@ menu {
     .three-content .box {
         width: 49%;
     }
-
+   
     .page4 {
         background:
             url("./assets/page4/AnimatedCircle.png") left top / 250px no-repeat,
@@ -1470,14 +1223,7 @@ menu {
         line-height: 43px;
     }
 
-    /* page7 */
-    .page7 table tr td {
-        font-size: 20px;
-    }
 
-    .page7 .open h1 {
-        font-size: 25px;
-    }
 
 
     /* page8 */
@@ -1495,16 +1241,16 @@ menu {
         margin: 6px;
     }
 
-    .page8-boxs .page8-box2 {
+    /* .page8-boxs .page8-box2 {
         display: none;
     }
 
     .page8-box {
         width: 80%;
-    }
+    } */
 
     .page8-box img:nth-child(2) {
-        height: 50px;
+        height: 60px;
         width: 85px;
     }
 
@@ -1528,7 +1274,7 @@ menu {
     }
 
     .one .logo-text {
-        display: none;
+        display: flex;
     }
 
     .footer-threeboxs>img {
@@ -1549,6 +1295,7 @@ menu {
         transform: translate(40px);
     }
 }
+
 
 @media only screen and (min-width: 600px) and (max-width: 800px) {
     .page1-texts h6 {
@@ -1575,12 +1322,535 @@ menu {
         transform: translateY(-100px);
         /* display: none; */
     }
+
+    .page8-boxs {
+        gap: 20px;
+    }
 }
 
-@media only screen and (max-width: 400px){
+
+@media only screen and (min-width: 800px) and (max-width:950px) {
+    .logo-text {
+        padding: 10px;
+        gap: 7px;
+    }
+
+    .logo-text img {
+        height: 35px;
+        width: 35px;
+    }
+
+    .logo-text h1 {
+        font-size: 20px;
+    }
+
+    nav label {
+        display: none;
+    }
+
+    menu ul li {
+        font-size: 23px;
+    }
+
+    .page7 .open {
+        width: 22%;
+    }
+
+    .page7 .open h1 {
+        font-size: 30px;
+        line-height: 45px;
+        margin-right: 15px;
+    }
+
+    .page7 table tr td {
+        font-size: 26px;
+    }
+
+    .page7 table tr td {
+        width: 215px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    /* menu query */
+    menu ul {
+        height: 60vh;
+        background-color: #392a0e;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    menu {
+        width: 98%;
+        position: absolute;
+        top: 84px;
+        left: -98%;
+    }
+
+    menu ul li {
+        font-size: 50px;
+    }
+
+    nav i {
+        visibility: visible;
+    }
+
+    /* page1 query */
+    .page1 {
+        flex-direction: column;
+    }
+
+    .page1 .page1-img {
+        width: 95%;
+        justify-content: center;
+
+        /* background-color: #966a19; */
+    }
+
+    .page1-img img {
+        width: 75%;
+    }
+
+    .page1-texts p {
+        font-size: 23px;
+        width: 90%;
+        text-align: center;
+        margin: 10px auto;
+    }
+
+    .page1 .page1-texts {
+        width: 96%;
+        padding-top: 60px;
+    }
+
+    .page1-texts h6 {
+        font-size: 25px;
+        margin: 8px 0px;
+    }
+
+    /* page2 query */
+    .page2 .txts-imgs>p {
+        width: 90%;
+    }
+
+    /* page3 query */
+    .page3-txts {
+        width: 90%;
+    }
+
+    .page3-txts h1 {
+        font-size: 40px;
+        line-height: 50px;
+    }
+
+    .page3-txts p {
+        width: 100%;
+    }
+
+    /* page4 query */
+    .page4 {
+        height: auto;
+        padding: 15px;
+    }
+
+    .page4 h1 {
+        font-size: 40px;
+        margin: 35px auto;
+    }
+
+    .page4 .three-content {
+        height: auto;
+        width: 100%;
+        /* background-color: aqua; */
+    }
+
+    .page4 .three-content .box {
+        /* background-color: #966a19; */
+        height: 380px;
+        padding-left: 10px;
+    }
+
+    .three-content .box .lafe,
+    .lafe img {
+        height: 40%;
+        width: 50%;
+    }
+
+    .lafe img {
+        height: 90%;
+        width: 90%;
+    }
+
+    .three-content .box1 p {
+        width: 85%;
+    }
+
+    .three-content .box button {
+        height: 60px;
+        width: 60px;
+        font-size: 20px;
+    }
+
+    /* page5 query  */
+    .page5 h1 {
+        font-size: 46px;
+        margin-top: 15px auto;
+        text-align: center;
+    }
+
+    .page5 p {
+        width: 85%;
+    }
+
+    .three-imgs img {
+        width: 55%;
+    }
+
+    /* page6 query */
+    .page6 .circle1,
+    .page6 .circle2,
+    .page6 .circle3 {
+        height: 330px;
+        width: 330px;
+    }
+
+    .page6-content h1 {
+        font-size: 35px;
+        margin-top: 10px;
+        width: 90%;
+    }
+
+    .page6-content .four-juice {
+        min-height: 620px;
+    }
+
+    .four-juice .juice2,
+    .four-juice .juice3 {
+        display: none;
+    }
+
+    /* page7 query */
+    .page7 .open h1 {
+        font-size: 40px;
+        line-height: 55px;
+        margin-right: 20px;
+    }
+
+    .page7 table tr {
+        font-size: 33px;
+    }
+
+    .page7 table tr td {
+        font-size: 30px;
+    }
+
+    .page7 table tr td {
+        width: 215px;
+    }
+
+    .page7 .open {
+        width: 30%;
+    }
+
+    /* page8 query */
+    .page8 {
+        min-height: 500px;
+    }
+
+    .page8>h1 {
+        padding: 35px;
+        font-size: 30px;
+    }
+
+    .page8>h1::before,
+    .page8>h1::after {
+        content: "";
+        display: inline-block;
+        height: 2px;
+        width: 10%;
+        background-color: aliceblue;
+        margin: 15px;
+    }
+
+
+    .page8-box {
+        width: 45%;
+        padding: 5px;
+        gap: 40px;
+        left: 0%;
+    }
+
+    .page8-box img:first-child {
+        height: 80px;
+        width: 80px;
+    }
+
+    .page8-box img:nth-child(2) {
+        height: 50px;
+        width: 100px;
+    }
+
+    /* page10 footer */
+    .one .logo-text {
+        display: flex;
+    }
+
+    /* .two h2 {
+        margin: 12px ;
+    } */
+    .footer-threeboxs .one,
+    .two,
+    .three {
+        min-height: 120px;
+
+    }
+
+    footer .logo-text {
+        width: max-content;
+    }
+
+    .footer-threeboxs {
+        gap: 20px;
+    }
+
+    .footer-threeboxs .one {
+        width: 40%;
+    }
+
+    .footer-threeboxs .three {
+        width: 35%;
+    }
+
+    .footer-threeboxs .two {
+        width: 15%;
+    }
+
+    .footer-threeboxs>img {
+        max-height: 40%;
+        max-width: 40%;
+        position: absolute;
+        top: 55%;
+        right: 10%;
+        transform: translate(30%, 40%);
+    }
+}
+
+@media only screen and (max-width:650px) {
+    .page8-box2 {
+        display: none;
+
+    }
+
+    .page8-box {
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .four-juice .juice4 {
+        display: none;
+    }
+
+    .footer-threeboxs h2 {
+        font-size: 12px;
+    }
+
+    .page1 {
+        text-align: center;
+    }
+
+    .txt-seed {
+        display: block;
+    }
+
+    .page1-texts h1 {
+        line-height: 63px;
+    }
+
+    .txt-seed img {
+        position: absolute;
+        height: 90px;
+        width: 90px;
+        right: 8%;
+        transform: translateY(-90px);
+        /* display: none; */
+    }
+}
+
+@media only screen and (min-width:400px) and (max-width: 600px) {
     /* page -1 */
 
-       .txt-seed img {
+    .txt-seed img {
+        position: absolute;
+        height: 90px;
+        width: 90px;
+        right: 7%;
+        transform: translateY(-90px);
+        /* display: none; */
+    }
+
+    .page1 .page1-texts {
+        min-height: 400px;
+        padding-top: 5px;
+    }
+
+    /* page-2 */
+    .page2 {
+        min-height: 400px;
+    }
+
+    .ani-img .first {
+        height: 190px;
+    }
+
+    .img-arrow {
+        min-height: fit-content;
+    }
+
+    .arrow {
+        height: 320px;
+    }
+
+    .line .line1,
+    .line .line2 {
+        height: 140px;
+    }
+
+    /* page-8 */
+    .page8 {
+        padding: 15px;
+    }
+
+    .page8-boxs .page8-box2 {
+        display: block;
+    }
+
+    .page8-boxs {
+        flex-direction: column;
+    }
+
+    .page6-content h1 {
+        font-size: 33px;
+        width: 95%;
+    }
+
+    /* footer */
+    .footer-threeboxs img {
+        height: 90px;
+        width: 90px;
+        top: 59%;
+        right: 50%;
+        transform: translate(50%, 50%);
+    }
+
+    .one .logo-text {
+        display: flex;
+    }
+
+    .logo-text img {
+        height: 40px;
+        width: 40px;
+    }
+
+    .foot-logo {
+        min-height: 90px;
+    }
+
+    .foot-logo img {
+        height: 60px;
+        width: 60px;
+        transform: translate(0px);
+    }
+
+    .footer-threeboxs h2 {
+        font-size: 18px;
+    }
+
+    .two {
+        min-height: 120px;
+    }
+
+    .three {
+        min-height: 120px;
+    }
+
+    footer h2 {
+        margin: 5px 0px;
+    }
+
+    footer>h3 {
+        padding: 10px;
+        font-size: 15px;
+    }
+
+    .juice-txts {
+        top: 160px;
+    }
+
+    .juice-txts p {
+        font-size: 20px;
+    }
+
+    .page4 {
+        min-height: 560px;
+    }
+
+    .page4 h1 {
+        font-size: 27px;
+    }
+
+    .three-content .box .lafe,
+    .lafe img {
+        height: 30%;
+        width: 80%;
+    }
+
+    .lafe img {
+        height: 96%;
+        width: 95%;
+    }
+
+    .page6 .circle1,
+    .page6 .circle2,
+    .page6 .circle3 {
+        height: 180px;
+        width: 180px;
+    }
+
+    .page7 .open h1 {
+        font-size: 25px;
+        line-height: 45px;
+        margin-right: 15px;
+    }
+    .page7 table tr td {
+        font-size: 23px;
+    }
+    .page8>h1::before,
+    .page8>h1::after {
+        content: "";
+        display: inline-block;
+        height: 2px;
+        width: 10%;
+        background-color: aliceblue;
+        margin: 10px;
+    }
+
+    .page8>h1 {
+        padding: 20px;
+        font-size: 25px;
+    }
+}
+
+
+
+
+
+@media only screen and (max-width: 400px) {
+    /* page -1 */
+
+    .txt-seed img {
         position: absolute;
         height: 70px;
         width: 70px;
@@ -1588,91 +1858,188 @@ menu {
         transform: translateY(-70px);
         /* display: none; */
     }
+
     .page1 .page1-texts {
         padding-top: 5px;
     }
-    
+
     /* page-2 */
     .page2 {
         min-height: 400px;
     }
+
     .ani-img .first {
         height: 180px;
     }
+
     .img-arrow {
         min-height: fit-content;
     }
+
     .arrow {
         height: 300px;
     }
-     .line .line1, .line .line2 {
+
+    .line .line1,
+    .line .line2 {
         height: 120px;
-     }
-   
-     /* page-8 */
-     .page8 {
-        padding: 15px;
-     }
-     .page8-boxs .page8-box2 {
-        display: block;
-     }
-     .page8-boxs {
-        flex-direction: column;
-     }
-     /* footer */
-    .footer-threeboxs img {
-        height: 120px;
-        width: 120px;
-        top: 50%;
-        right: 50%;
-        transform: translate(50%,50%);
     }
+ 
+    /* page-8 */
+    .page8 {
+        padding: 15px;
+    }
+
+    .page8-boxs .page8-box2 {
+        display: block;
+    }
+
+    .page8-boxs {
+        flex-direction: column;
+    }
+
+    .page6-content h1 {
+        font-size: 30px;
+        width: 95%;
+    }
+
+    /* footer */
+    .footer-threeboxs img {
+        height: 80px;
+        width: 80px;
+        top: 60%;
+        right: 50%;
+        transform: translate(50%, 50%);
+    }
+
     .one .logo-text {
         display: flex;
     }
+
     .logo-text img {
         height: 30px;
         width: 30px;
     }
+
     .foot-logo {
         min-height: 80px;
     }
+
     .foot-logo img {
-        height: 40px; 
+        height: 40px;
         width: 40px;
         transform: translate(0px);
     }
+
     .footer-threeboxs h2 {
-        font-size: 12px;
+        font-size: 15px;
     }
+
     .two {
         min-height: 120px;
     }
+
     .three {
         min-height: 120px;
     }
+
     footer h2 {
         margin: 3px 0px;
     }
-    footer>h3{
+
+    footer>h3 {
         padding: 10px;
         font-size: 12px;
     }
+
+    .juice-txts {
+        top: 160px;
+    }
+
     .juice-txts p {
         font-size: 18px;
     }
+
     .page4 {
         min-height: 560px;
     }
-    .page4 h1{
+
+    .page4 h1 {
         font-size: 22px;
     }
-      .three-content .box .lafe, .lafe img {
+
+    .three-content .box .lafe,
+    .lafe img {
         height: 30%;
         width: 80%;
     }
-    .lafe img{
+
+    .lafe img {
         height: 96%;
         width: 95%;
     }
+
+    .page6 .circle1,
+    .page6 .circle2,
+    .page6 .circle3 {
+        height: 180px;
+        width: 180px;
+    }
+
+       .page7 .open h1 {
+        font-size: 14px;
+        line-height: 33px;
+        margin-right: 15px;
+    }
+         .page7 table tr td {
+        font-size: 23px;
+    }
+   .page7 h1 {
+    height: fit-content;
+   }
+
+    .page8>h1::before,
+    .page8>h1::after {
+        content: "";
+        display: inline-block;
+        height: 2px;
+        width: 10%;
+        background-color: aliceblue;
+        margin: 7px;
+    }
+
+    .page8>h1 {
+        padding: 20px;
+        font-size: 18px;
+    }
 }
+
+
+/* scroll animation  */
+
+.page1-texts h6 {
+  animation: fadeUp 0.7s ease both;
+  animation-delay: 0.1s;
+}
+.page1-texts h1 {
+  animation: fadeUp 0.8s ease both;
+  animation-delay: 0.2s;
+}
+.txt-seed h1 {
+  animation: fadeUp 0.8s ease both;
+  animation-delay: 0.3s;
+}
+.page1-texts p {
+  animation: fadeUp 0.7s ease both;
+  animation-delay: 0.4s;
+}
+
+
+
+
+/* keyframes  */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(60px); }
+  to   { opacity: 1; transform: translateY(0);    }
+}
+
