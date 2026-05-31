@@ -1,5 +1,9 @@
 # Sweet-Coffee-
 My first responsive website built using HTML and CSS.
+
+## Acknowledgement
+This project was created during my web development learning journey with Code99 Academy.
+
 ## FEATURES
 - Responsive Design
 - Navigation Bar
