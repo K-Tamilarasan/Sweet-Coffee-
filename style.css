@@ -46,7 +46,7 @@ html {
     min-height: 100vh;
     background-color: #28120A;
     color: white;
-    overflow: hidden;
+    /* overflow-x: hidden; */
 }
 
 
@@ -633,6 +633,7 @@ menu ul li a:hover {
     border-radius: 150px 120px 0px 0px;
     /* background-color: aquamarine; */
     overflow: hidden;
+    /* scroll-behavior: none; */
 }
 
 .page6 .circle1,
@@ -2028,14 +2029,15 @@ menu {
     }
 
 }
-    .socials h3 {
-        font-family: 'Courier New', Courier, monospace;
-        /* color: gold; */
-        font-weight: 600;
-        background: linear-gradient(90deg, #ff6b6b, #ffd93d);
-        background-clip: text;
-        color: transparent;
-    }
+
+.socials h3 {
+    font-family: 'Courier New', Courier, monospace;
+    /* color: gold; */
+    font-weight: 600;
+    background: linear-gradient(90deg, #ff6b6b, #ffd93d);
+    background-clip: text;
+    color: transparent;
+}
 
 /* scroll animation  */
 
@@ -2075,141 +2077,382 @@ menu {
     }
 }
 
-.page2 {
-    animation-name: test;
-    animation-delay: 1.3s;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-}
-
-@keyframes test {
+@keyframes fadeUp {
     from {
-        opacity: 0.3;
-        scale: .3;
-        transform: translateX(100%);
+        opacity: 0;
+        transform: translateY(60px);
     }
 
     to {
         opacity: 1;
-        scale: 1;
-        transform: translateX(0px);
+        transform: translateY(0);
     }
 }
 
-.page3 {
-    animation-name: test2;
-    animation-delay: 2s;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-}
 
-@keyframes test2 {
+@keyframes fadeLeft {
     from {
-        opacity: 0.3;
-        scale: .3;
+        opacity: 0;
+        transform: translateX(-70px);
     }
 
     to {
         opacity: 1;
-        scale: 1;
+        transform: translateX(0);
     }
 }
 
-.page3 {
-    animation-name: test3;
-    animation-delay: 2.3s;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-}
-
-@keyframes test3 {
+@keyframes fadeRight {
     from {
-        opacity: 0.3;
-        scale: .3;
-        transform: translateY(100%);
+        opacity: 0;
+        transform: translateX(70px);
     }
 
     to {
         opacity: 1;
-        scale: 1;
-        transform: translateY(0px);
+        transform: translateX(0);
     }
 }
 
-.page4 h1 {
-    animation-name: test4;
-    animation-delay: 4.4s;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-}
-
-@keyframes test4 {
+@keyframes zoomIn {
     from {
-        opacity: 0.3;
-        scale: 1.3;
-        transform: translateX(40%);
+        opacity: 0;
+        transform: scale(0.82);
     }
 
     to {
         opacity: 1;
-        scale: 1;
-        transform: translateX(0px);
+        transform: scale(1);
     }
 }
 
-.page5 h1,
-.page5 p {
-    animation-name: test5;
-    animation-delay: 6s;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
 }
 
-@keyframes test5 {
-    10% {
-        opacity: 0.3;
+@keyframes glowPulse {
 
+    0%,
+    100% {
+        box-shadow: 0 0 10px #DDB66F;
     }
 
     50% {
-        opacity: 0.6;
-        color: #392a0e;
-    }
-
-    100% {
-        opacity: 1;
+        box-shadow: 0 0 28px #DDB66F, 0 0 50px rgba(221, 182, 111, 0.35);
     }
 }
 
-.page6 .four-juice {
-    animation-name: test6;
-    animation-delay: 9.4s;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: 1;
-}
-
-@keyframes test6 {
+@keyframes shimmer {
     from {
-        opacity: 0.3;
-        scale: .3;
-        transform: translateX(-80%);
+        background-position: 0% 0%;
     }
 
     to {
-        opacity: 1;
-        scale: 1;
-        transform: translateX(0px);
+        background-position: 300% 0%;
     }
+}
+
+@keyframes floatY {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(18px);
+    }
+}
+
+
+
+@keyframes progressBar {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes navGlow {
+    from {
+        box-shadow: none;
+    }
+
+    to {
+        box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
+    }
+}
+
+
+.page1-texts h6 {
+    animation: fadeUp 0.7s ease both;
+    animation-delay: 0.1s;
+}
+
+.page1-texts h1 {
+    animation: fadeUp 0.8s ease both;
+    animation-delay: 0.2s;
+}
+
+.txt-seed h1 {
+    animation: fadeUp 0.8s ease both;
+    animation-delay: 0.3s;
+}
+
+.page1-texts p {
+    animation: fadeUp 0.7s ease both;
+    animation-delay: 0.4s;
+}
+
+.page1 .four-boxs,
+.early-offs {
+    animation: fadeUp 0.7s ease both;
+    animation-delay: 0.55s;
+}
+
+.page1-texts button {
+    animation: fadeUp 0.7s ease both, glowPulse 2.5s ease-in-out 1s infinite;
+    animation-delay: 0.65s, 1.3s;
+}
+
+
+@supports (animation-timeline: view()) {
+
+    /* PAGE 2 */
+    .page2 .txts-imgs h1 {
+        animation: zoomIn linear both;
+        animation-timeline: view();
+        animation-range: entry 0% entry 35%;
+    }
+
+    .page2 .txts-imgs p {
+        animation: fadeUp linear both;
+        animation-timeline: view();
+        animation-range: entry 5% entry 38%;
+    }
+
+    .page2 .ani-img {
+        animation: fadeRight linear both;
+        animation-timeline: view();
+        animation-range: entry 8% entry 40%;
+    }
+
+    .page2 .arrow {
+        animation: fadeLeft linear both;
+        animation-timeline: view();
+        animation-range: entry 10% entry 40%;
+    }
+
+    .page2 .line {
+        animation: fadeUp linear both;
+        animation-timeline: view();
+        animation-range: entry 5% entry 38%;
+    }
+
+    /* PAGE 3 */
+    .page3-txts h1 {
+        animation: fadeLeft linear both;
+        animation-timeline: view();
+        animation-range: entry 0% entry 30%;
+    }
+
+    .page3-txts p {
+        animation: fadeUp linear both;
+        animation-timeline: view();
+        animation-range: entry 5% entry 35%;
+    }
+
+    .page3-txts button {
+        animation: zoomIn linear both;
+        animation-timeline: view();
+        animation-range: entry 10% entry 38%;
+    }
+
+    /* PAGE 4 */
+    .page4>h1 {
+        animation: zoomIn linear both;
+        animation-timeline: view();
+        animation-range: entry 0% entry 28%;
+    }
+
+    .three-content .box1:nth-child(1) {
+        animation: fadeLeft linear both;
+        animation-timeline: view();
+        animation-range: entry 0% entry 35%;
+    }
+
+    .three-content .box1:nth-child(2) {
+        animation: fadeUp linear both;
+        animation-timeline: view();
+        animation-range: entry 8% entry 42%;
+    }
+
+    .three-content .box1:nth-child(3) {
+        animation: fadeRight linear both;
+        animation-timeline: view();
+        animation-range: entry 16% entry 50%;
+    }
+
+    /* PAGE 5 */
+    .page5>h1:nth-of-type(1) {
+        animation: fadeLeft linear both;
+        animation-timeline: view();
+        animation-range: entry 0% entry 30%;
+    }
+
+    .page5>h1:nth-of-type(2) {
+        animation: fadeRight linear both;
+        animation-timeline: view();
+        animation-range: entry 5% entry 33%;
+    }
+
+    .page5>p {
+        animation: fadeUp linear both;
+        animation-timeline: view();
+        animation-range: entry 8% entry 35%;
+    }
+
+    .three-imgs img:nth-child(1) {
+        animation: fadeLeft linear both;
+        animation-timeline: view();
+        animation-range: entry 10% entry 40%;
+    }
+
+    .three-imgs img:nth-child(2) {
+        animation: zoomIn linear both;
+        animation-timeline: view();
+        animation-range: entry 15% entry 44%;
+    }
+
+    .three-imgs img:nth-child(3) {
+        animation: fadeRight linear both;
+        animation-timeline: view();
+        animation-range: entry 20% entry 48%;
+    }
+
+    /* PAGE 6 */
+    .page6-content h1:nth-of-type(1) {
+        animation: fadeLeft linear both;
+        animation-timeline: view();
+        animation-range: entry 0% entry 28%;
+    }
+
+    .page6-content h1:nth-of-type(2) {
+        animation: fadeRight linear both;
+        animation-timeline: view();
+        animation-range: entry 5% entry 32%;
+    }
+
+    .juice:nth-child(2) {
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 0% entry 30%;
+  }
+  .juice:nth-child(3) {
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 5% entry 35%;
+  }
+  .juice:nth-child(4) {
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 10% entry 40%;
+  }
+  .juice:nth-child(5) {
+    animation: fadeUp linear both;
+    animation-timeline: view();
+    animation-range: entry 15% entry 45%;
+  }
+
+    /* PAGE 7 */
+    .page7 h1 {
+        animation: zoomIn linear both;
+        animation-timeline: view();
+        animation-range: entry 0% entry 30%;
+    }
+
+    .page7 table {
+        animation: fadeUp linear both;
+        animation-timeline: view();
+        animation-range: entry 8% entry 38%;
+    }
+
+    /* PAGE 8 */
+    .page8>h1 {
+        animation: zoomIn linear both;
+        animation-timeline: view();
+        animation-range: entry 0% entry 28%;
+    }
+
+    .page8-box:nth-child(1) {
+        animation: fadeLeft linear both;
+        animation-timeline: view();
+        animation-range: entry 5% entry 35%;
+    }
+
+    .page8-box:nth-child(2) {
+        animation: fadeRight linear both;
+        animation-timeline: view();
+        animation-range: entry 10% entry 40%;
+    }
+
+    /* FOOTER */
+    .footer-threeboxs .one {
+        animation: fadeLeft linear both;
+        animation-timeline: view();
+        animation-range: entry 0% entry 35%;
+    }
+
+    .footer-threeboxs .two {
+        animation: fadeUp linear both;
+        animation-timeline: view();
+        animation-range: entry 5% entry 38%;
+    }
+
+    .footer-threeboxs .three {
+        animation: fadeRight linear both;
+        animation-timeline: view();
+        animation-range: entry 10% entry 42%;
+    }
+}
+
+
+/* Product lafe circles */
+.three-content .box1 .lafe {
+    transition: transform 0.6s ease, box-shadow 0.4s ease;
+}
+
+.three-content .box1:hover .lafe {
+    transform: rotate(15deg) scale(1.05);
+    box-shadow: 0 0 30px rgba(221, 182, 111, 0.4);
+}
+
+/* Product number buttons */
+.three-content .box1 button {
+    transition: transform 0.5s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+}
+
+.three-content .box1:hover button {
+    transform: rotate(360deg) scale(1.1);
+    box-shadow: 0 0 25px rgba(221, 182, 111, 0.6);
+}
+
+
+
+/* Ethi-hack shimmer text for page1 title */
+.page1-texts h1:first-of-type {
+    background-image: linear-gradient(90deg, white, #DDB66F, white, #DDB66F, white);
+    background-size: 300% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: shimmer 5s linear infinite, fadeUp 0.8s ease both;
+    animation-delay: 0s, 0.2s;
 }
